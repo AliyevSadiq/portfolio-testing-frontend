@@ -6,3 +6,20 @@
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@import "base/variables";
+@import "base/mixins";
+
+
+
+//sections
+@import "blocks/promo";
+
+//blocks
+@import "blocks/title";
+@import "blocks/buttons";
+@import "blocks/social";
