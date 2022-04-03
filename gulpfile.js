@@ -43,22 +43,26 @@ gulp.task('html-minify', () => {
 
 gulp.task('scripts', () => {
     return gulp.src('src/assets/js/**/*.js')
-        .pipe(gulp.dest('dist/assets/js'));
+        .pipe(gulp.dest('dist/assets/js'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('fonts', () => {
     return gulp.src('src/assets/fonts/**/*')
-        .pipe(gulp.dest('dist/assets/fonts'));
+        .pipe(gulp.dest('dist/assets/fonts'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('images', () => {
     return gulp.src('src/assets/img/**/*')
-        .pipe(gulp.dest('dist/assets/img'));
+        .pipe(gulp.dest('dist/assets/img'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('icons', () => {
     return gulp.src('src/assets/icons/**/*')
-        .pipe(gulp.dest('dist/assets/icons'));
+        .pipe(gulp.dest('dist/assets/icons'))
+        .pipe(browserSync.stream());
 });
 
 
