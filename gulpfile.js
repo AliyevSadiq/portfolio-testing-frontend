@@ -30,9 +30,9 @@ gulp.task('watch', function() {
     gulp.watch("src/assets/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
     gulp.watch("src/*.html").on('change', gulp.parallel('html-minify'));
     gulp.watch("src/assets/js/**/*.js").on('change', gulp.parallel('scripts'));
-    gulp.watch("src/assets/fonts/**/*").on('change', gulp.parallel('fonts'));
-    gulp.watch("src/assets/img/**/*").on('change', gulp.parallel('images'));
-    gulp.watch("src/assets/icons/**/*").on('change', gulp.parallel('icons'));
+    gulp.watch("src/assets/fonts/**/*").on('all', gulp.parallel('fonts'));
+    gulp.watch("src/assets/img/**/*").on('all', gulp.parallel('images'));
+    gulp.watch("src/assets/icons/**/*").on('all', gulp.parallel('icons'));
 })
 
 gulp.task('html-minify', () => {
