@@ -20,8 +20,28 @@
     column-gap: 144px;
   }
   &__column{
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #000;
+      top: 10px;
+    }
     &-title{
       padding-left: 43px;
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: $main-color;
+        top: 8px;
+        left: -7px;
+      }
     }
   }
   &__items{
@@ -30,6 +50,16 @@
   &__item{
     margin-top: 45px;
     padding-left: 43px;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 43px;
+      height: 1px;
+      background-color: #000;
+      left: 0;
+      top: 17px;
+    }
     &-header{
       position: relative;
       @include beforeCircle;
