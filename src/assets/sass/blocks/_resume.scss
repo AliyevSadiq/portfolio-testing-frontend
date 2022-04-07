@@ -1,0 +1,62 @@
+.resume{
+  padding-top: 126px;
+  &__title{
+    text-align: center;
+    position: relative;
+    @include beforeCircle;
+    &:before{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle{
+    text-align: center;
+  }
+  &__wrapper{
+    margin-top: 60px;
+    padding-left: 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 144px;
+  }
+  &__column{
+    &-title{
+      padding-left: 43px;
+    }
+  }
+  &__items{
+      list-style-type: none;
+  }
+  &__item{
+    margin-top: 45px;
+    padding-left: 43px;
+    &-header{
+      position: relative;
+      @include beforeCircle;
+      &:before{
+        top: 0;
+      }
+    }
+    &-icon{
+      position: absolute;
+      left: 17px;
+      bottom: 0;
+
+    }
+    &-title{
+      padding-left: 56px;
+    }
+    &-location{
+      padding-left: 56px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-body{
+      margin-top: 12px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
