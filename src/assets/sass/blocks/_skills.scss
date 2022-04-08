@@ -1,0 +1,85 @@
+.skills{
+  //max-width: 1141px;
+  padding: 120px 10px 0 11px;
+  &__title{
+    text-align: center;
+    position: relative;
+    @include beforeCircle;
+    &:before{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle{
+    text-align: center;
+  }
+  &_wrapper{
+    padding-right: 11px;
+    padding-left: 10px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 270px);
+    gap: 13px;
+  }
+  &__item{
+    border: 1px solid #000000;
+    padding: 30px 29px 25px 30px;
+    &-title{
+      margin-top: 30px;
+    }
+   &-text{
+     margin-top: 15px;
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 18px;
+   }
+  }
+  &__ratings{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    column-gap: 45px;
+    grid-template-rows: repeat(2, 70px);
+    row-gap: 30px;
+    &-item{
+      position: relative;
+    }
+    &-title{
+      margin-top: 8px;
+      padding-left: 14px;
+      position: relative;
+      @include beforeCircle;
+      &:before{
+        top: -8px;
+      }
+    }
+    &-percent{
+      position: absolute;
+      top: 8px;
+      right: 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &-line{
+      margin-top: 25px;
+      height: 14px;
+      background: #E8E4DE;
+      border-radius: 4px;
+      width: 100%;
+      position: relative;
+      span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        height: 14px;
+        background: $main-color;
+        border-radius: 4px;
+        width: 0;
+        transition: width 2s;
+      }
+    }
+  }
+}
