@@ -22,6 +22,10 @@
   &__item{
     img{
       width: 100%;
+      transition: all .5s;
+      &:hover{
+        transform: scale(1.05);
+      }
     }
     &.vertical{
       grid-column: 4 / 5;
