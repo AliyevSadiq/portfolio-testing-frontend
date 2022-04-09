@@ -15,9 +15,11 @@
   &__wrapper{
     margin-top: 60px;
     padding-left: 65px;
+    padding-right: 89px;
     display: grid;
     grid-template-columns: repeat(2, 425px);
     column-gap: 144px;
+    justify-content: space-between;
   }
   &__column{
     position: relative;
