@@ -14,7 +14,7 @@
     padding-right: 50px;
     padding-left: 50px;
     display: grid;
-    grid-template-columns: repeat(2,366px);
+    grid-template-columns: repeat(auto-fill,366px);
     justify-content: space-between;
   }
   &__column{

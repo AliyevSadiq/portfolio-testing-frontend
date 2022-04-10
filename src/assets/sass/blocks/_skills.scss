@@ -18,8 +18,9 @@
     padding-left: 10px;
     margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(2, 270px);
+    grid-template-columns: repeat(auto-fill,270px);
+    grid-template-rows: repeat(2,270px);
+    grid-auto-rows: 270px;
     gap: 13px;
   }
   &__item{
@@ -38,7 +39,7 @@
   &__ratings{
     margin-top: 120px;
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(auto-fill, 350px);
     column-gap: 45px;
     grid-template-rows: repeat(2, 70px);
     row-gap: 30px;
